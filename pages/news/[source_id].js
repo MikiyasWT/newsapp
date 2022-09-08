@@ -5,7 +5,7 @@ import Thumbnail from "../../components/Thumbnail";
 
 
 export const getStaticProps = async () =>{
-  //"https://newsdata.io/api/1/news?apikey=pub_1095460b570e5e13356b6c86771f3903fda8d&q=tesla"
+  
   
   
     const res = await fetch(process.env.NEXT_PUBLIC_BACKEND_API);
@@ -40,17 +40,17 @@ export default function NewsDetail({news}){
     return(
       <div>
       <Nav />
-       <div class="p-40 pt-0 mt-0 ">
-          <div class="overflow-hidden text-gray-700 max-h-90"> 
+       <div className="p-40 pt-0 mt-0 ">
+          <div className="overflow-hidden text-gray-700 max-h-90"> 
                     
-                    <Thumbnail class="p-0 m-o" url={image_url} /> 
+                    <Thumbnail className="p-0 m-o" url={image_url} /> 
           </div>
 
-        <div class="m-5">
-          <h1 class="font-black md:font-bold pb-5">{title} &nbsp {pubDate} </h1><hr />
+        <div className="m-5">
+          <h1 className="font-black md:font-bold pb-5">{title} &nbsp {pubDate} </h1><hr />
           
-          <h2 class="font-semibold md:font-semibold pb-5">{description}</h2>
-          <h6 class="font-medium">{content}</h6>
+          <h2 className="font-semibold md:font-semibold pb-5">{description}</h2>
+          <h6 className="font-medium">{content}</h6>
 
         </div>
        </div>

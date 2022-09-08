@@ -1,4 +1,4 @@
-
+import Link from "next/link"
 
 export default function Nav(){
 
@@ -21,6 +21,7 @@ export default function Nav(){
             <a href="https://www.linkedin.com/in/mikiyas-wendmneh/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">LinkedIn</a>
 
             <a href="https://mikiyaswt.netlify.app/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">My Portfolio</a>
+            
           </div>
         </div>
       </div>
@@ -36,3 +37,6 @@ export default function Nav(){
    
     );
 }
+
+
+

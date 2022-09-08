@@ -1,4 +1,3 @@
-//<div class="flex flex-row-reverse items-center space-x-4 space-x-reverse">
 
 export default function Impact({item}){
     const {title,image_url,id,note} = item;
