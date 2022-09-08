@@ -5,9 +5,10 @@ import Thumbnail from "../../components/Thumbnail";
 
 
 export const getStaticProps = async () =>{
-    
-    
-    const res = await fetch("https://newsdata.io/api/1/news?apikey=pub_1095460b570e5e13356b6c86771f3903fda8d&q=tesla");
+  //"https://newsdata.io/api/1/news?apikey=pub_1095460b570e5e13356b6c86771f3903fda8d&q=tesla"
+  
+  
+    const res = await fetch(process.env.NEXT_PUBLIC_BACKEND_API);
     
     const data = await res.json();
     
@@ -20,7 +21,7 @@ export const getStaticProps = async () =>{
 
 
   export async function getStaticPaths() {
-    const res = await fetch("https://newsdata.io/api/1/news?apikey=pub_1095460b570e5e13356b6c86771f3903fda8d&q=tesla");
+    const res = await fetch(process.env.NEXT_PUBLIC_BACKEND_API);
     
     const data = await res.json();
     const paths = data.results.map((news) => ({
