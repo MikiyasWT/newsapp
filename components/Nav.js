@@ -4,29 +4,29 @@ export default function Nav(){
 
     return(
       
-        <div class="sticky top-0 z-50 mb-20 text-center sm:text-left">
-           <nav class=" bg-gray-800">
-  <div class="mx-auto max-w-7x1 px-2 sm:px-6 lg:px-8">
-    <div class=" flex h-16 items-center justify-between">
+        <div className="sticky top-0 z-50 mb-20 text-center sm:text-left">
+           <nav className=" bg-gray-800">
+  <div className="mx-auto max-w-7x1 px-2 sm:px-6 lg:px-8">
+    <div className=" flex h-16 items-center justify-between">
       
-      <div class="flex flex-1 items-center justify-center  sm:justify-start">
+      <div className="flex flex-1 items-center justify-center  sm:justify-start">
         
-        <div class=" sm:ml-6 sm:block lg:justify-center">
-          <div class="flex space-x-4">
+        <div className=" sm:ml-6 sm:block lg:justify-center">
+          <div className="flex space-x-4">
             
-            <a href="/" class="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">M.A.D News</a>
+            <a href="/" className="bg-gray-900 text-white px-3 py-2 rounded-md text-sm font-medium" aria-current="page">M.A.D News</a>
 
-            <a href="https://github.com/mikiyaswt" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Github</a>
+            <a href="https://github.com/mikiyaswt" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">Github</a>
 
-            <a href="https://www.linkedin.com/in/mikiyas-wendmneh/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">LinkedIn</a>
+            <a href="https://www.linkedin.com/in/mikiyas-wendmneh/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">LinkedIn</a>
 
-            <a href="https://mikiyaswt.netlify.app/" class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">My Portfolio</a>
+            <a href="https://mikiyaswt.netlify.app/" className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">My Portfolio</a>
           </div>
         </div>
       </div>
         <div>
-        <div class="flex space-x-4">
-        <a href={`/news/about`} class="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About me</a>
+        <div className="flex space-x-4">
+        <a href={`/news/about`} className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium">About me</a>
         </div>
         </div>
       </div>

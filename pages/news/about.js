@@ -9,8 +9,8 @@ export default function About(){
     return(
     <div>
       <Nav />
-       <div class="pt-10 mt-0">
-          <div class="overflow-hidden text-gray-700 "> 
+       <div className="pt-10 mt-0">
+          <div className="overflow-hidden text-gray-700 "> 
 
              
           {

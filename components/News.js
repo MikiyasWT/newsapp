@@ -7,22 +7,22 @@ export default function News({news}){
     const {title,description,source_id,image_url}  = news
     
     return(
-        <div class="overflow-hidden max-h-100">
+        <div className="overflow-hidden max-h-100">
             
             <Link href={`/news/${source_id}`}>
-                <div class="overflow-hidden text-gray-700 "> 
+                <div className="overflow-hidden text-gray-700 "> 
                 
                   <Thumnail url={image_url} /> 
                 </div>
             </Link>
-            <div class="bg-slate-100 max-h-40 center">
+            <div className="bg-slate-100 max-h-40 center">
                 <h1>{title}</h1>
                 <h3>{description?.toString().substring(0,50)}</h3>
                 
             </div>
             <div>
             <Link  href={`/news/${source_id}`}>
-                <h4 class="no-underline hover:underline text-blue-600  hover:text-red-600">Read More</h4>
+                <h4 className="no-underline hover:underline text-blue-600  hover:text-red-600">Read More</h4>
             </Link>
             </div>
         </div>

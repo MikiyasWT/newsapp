@@ -11,9 +11,7 @@ export const getStaticProps = async () =>{
   const res = await fetch(process.env.NEXT_PUBLIC_BACKEND_API);
   
   const data = await res.json();
-  //await res.json()
   
-  console.log(data.results)
   return {
     props : {
       news:data.results || null
